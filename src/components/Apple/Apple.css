@@ -1,0 +1,13 @@
+.apple {
+	animation: myAnimation 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+	0% {
+		transform: translate(0px, -150px) rotate(0deg);
+	}
+	100% {
+		transform: translate(0px, -20px) rotate(0deg);
+	}
+}
