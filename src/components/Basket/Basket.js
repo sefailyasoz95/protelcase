@@ -3,7 +3,7 @@ import "./Basket.css";
 import logo from "../../shopping-basket-svgrepo-com.svg";
 import Apple from "../Apple/Apple";
 const Basket = ({ apples }) => {
-	// using the effect to get to apples in different times
+	// using the effect to get the apples in different times
 	const [count, setCount] = useState(0);
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -26,7 +26,7 @@ const Basket = ({ apples }) => {
 	});
 	return (
 		<>
-			<div className='fixed-top d-flex m-5'>
+			<div className='fixed-top d-flex m-5' data-testid='baskettest'>
 				{/*  displaying the basket itself */}
 				<img src={logo} alt='logo' height='300' />
 				{/*  displaying the apples "in the basket" */}

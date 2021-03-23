@@ -4,7 +4,7 @@ import "./Apple.css";
 
 const Apple = () => {
 	return (
-		<div className='d-inline-block apple'>
+		<div className='d-inline-block apple' data-testid='appletest'>
 			{/*  displaying the apple itself */}
 			<img src={logo} alt='logo' height='25' />
 		</div>
